@@ -4,4 +4,4 @@
 
 ## Turma: React/AWS 06/11/2023
 
-# Tecnologias de uso: SCRUM, Kanban, HTML5, CSS3, TypeScript
+### Tecnologias utilizadas: SCRUM, Kanban, HTML5, CSS3, TypeScript
