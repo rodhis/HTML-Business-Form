@@ -1,0 +1,42 @@
+:root {
+    --main-black: #000;
+    --background-white: #FFF;
+    font-family: 'Roboto', sans-serif;
+    --button-green: #3EB25E;
+  }
+
+.home {
+    display: inline-flex;
+    padding: 3.2rem 5.25rem 3rem 13rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    background: var(--background-white)
+}
+
+.titles {
+    display: inline-block;
+    color: var(--main-black);
+    text-align: center;
+    padding: 0rem 1rem 2rem 2rem;
+}
+.title1 { 
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title2 {
+    margin-top: 0rem;
+}
+
+.next-button {
+    background-color: var(--button-green);
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--background-white);
+    font-weight: 700;
+    width: 10rem;
+    height: 2rem;
+}
