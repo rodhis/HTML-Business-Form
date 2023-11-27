@@ -1,8 +1,10 @@
 :root {
+    font-family: 'Roboto', sans-serif;
+
     --main-black: #000;
     --background-white: #FFF;
-    font-family: 'Roboto', sans-serif;
     --button-green: #3EB25E;
+    --hover-color: #FFFF7D;
   }
 
 .home {
@@ -39,4 +41,9 @@
     font-weight: 700;
     width: 10rem;
     height: 2rem;
+}
+
+.next-button:hover {
+    background-color: var(--hover-color);
+    color: var(--main-black);
 }
