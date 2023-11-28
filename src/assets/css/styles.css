@@ -56,15 +56,19 @@ p {
   /* buttons */
 
 .next-button {
-    background-color: var(--button-green);
+    background-color: var(--focus-green);
     border-radius: 2rem;
     border: none;
     font-size: 1.3rem;
     color: var(--background-white);
     font-weight: 700;
-    width: 12rem;
+    width: 43%;
     height: 2.5rem;
-    margin: 2rem 4rem 0 4rem;
+    margin: 2rem 1rem 0 0;
+}
+
+.skip-button {
+    width: 90%;
 }
 
 .next-button:hover {
@@ -118,6 +122,7 @@ input[type='radio'] {
     width: 22px;
     height: 22px;
     appearance: unset;
+    border-radius: 50%;
     background-color: var(--unfocus-green);
 }
 
