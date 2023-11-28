@@ -22,7 +22,7 @@
 
   /* titles, paragraphs and text in general */ 
 
-.titles {
+.forms {
     display: inline-block;
     color: var(--main-black);
     text-align: center;
@@ -63,4 +63,20 @@ p {
 .next-button:hover {
     background-color: var(--hover-color);
     color: var(--main-black);
+}
+
+/* selects, radios, checkboxes etc */
+
+#accstat {
+    display: flex;
+    appearance: none;
+    width: auto;
+    height: 2.5em;
+    font-size: 1.5em;
+    border-radius: 1.25em;
+    padding-left: 1.5em;
+    background-color: var(--background-white);
+    background: url('../images/arrow-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
 }
