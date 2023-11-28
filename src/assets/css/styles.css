@@ -1,3 +1,5 @@
+/* variables and default values*/
+
 :root {
     font-family: 'Roboto', sans-serif;
 
@@ -7,7 +9,9 @@
     --hover-color: #FFFF7D;
   }
 
-.home {
+  /* main pages styles */
+
+.views {
     display: inline-flex;
     padding: 3.2rem 5.25rem 3rem 13rem;
     justify-content: flex-end;
@@ -15,6 +19,8 @@
     gap: 5rem;
     background: var(--background-white)
 }
+
+  /* titles, paragraphs and text in general */ 
 
 .titles {
     display: inline-block;
@@ -31,6 +37,12 @@
 .title2 {
     margin-top: 0rem;
 }
+
+.subtitle {
+    font-size: 2em;
+}
+
+  /* buttons */
 
 .next-button {
     background-color: var(--button-green);
