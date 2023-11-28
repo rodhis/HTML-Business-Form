@@ -20,6 +20,8 @@
     background: var(--background-white)
 }
 
+
+
   /* titles, paragraphs and text in general */ 
 
 .forms {
@@ -67,16 +69,45 @@ p {
 
 /* selects, radios, checkboxes etc */
 
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 #accstat {
     display: flex;
     appearance: none;
+    border-radius: 1.25em;
+    border: 0.5px solid #d7c7c7;
     width: auto;
     height: 2.5em;
     font-size: 1.5em;
-    border-radius: 1.25em;
-    padding-left: 1.5em;
-    background-color: var(--background-white);
-    background: url('../images/arrow-bottom.svg');
-    background-repeat: no-repeat;
-    background-position: left 10px center;
+    background: white;
+    padding: 0 6% 0 10%;
+    cursor: pointer;
+}
+
+#accstat:hover {
+    border: 1px solid var(--main-black);
+}
+
+/* dropdown arrow */
+
+.dd-arrow {
+        width: 0;
+        height: 0;
+        margin-left: 13px;
+        border-radius: 2px;
+        position: absolute;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-top: 14px solid #3db05e4d;
+        pointer-events: none;
+}
+
+#accstat:focus~div{
+    border-top: 14px solid #3EB25E ;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
 }
