@@ -35,7 +35,7 @@
                 <section class="check">
 
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="books-articles">
+                        <input type="checkbox" name="train-resources" id="books-articles" required>
                         <label for="books-articles">Books and Articles</label>
                     </div>
                     <div class="flex-aligning">
@@ -51,14 +51,13 @@
                         <label for="experience">Experience with little investments</label>
                     </div>
                 </section>
-            <a href="page3.html">
-                <button class="next-button">Back</button></a>
+                <a href="page3.html">
+                <button class="next-button" formnovalidate onclick="backButton()">Back</button></a>
 
-                <button type="submit" class="next-button">Next</button></a>
+                <button type="submit" class="next-button">Next</button>
 
-            <a href="page5.html">
-                <button class="next-button skip-button" formnovalidate>Skip</button></a>
-            </form>
+        
+                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="skipButton()">Skip</button>
         </article>
     </section>
 </body>

@@ -10,7 +10,19 @@ function changeButtonText(text) {
 }
 function skipButton() {
     const skipButton = document.getElementById('skip-button');
-    skipButton.addEventListener('click', () => window.location.replace("/src/pages/page4.html"));
+    const page = document.URL.slice(-7, -6);
+    let currentPage = Number(page);
+    console.log(page);
+    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${currentPage + 1}.html`));
+}
+function backButton() {
+    const skipButton = document.getElementById('skip-button');
+    const page = document.URL;
+    const dotIndex = page.lastIndexOf('.');
+    let getCurrentPage = page.slice(dotIndex + 1);
+    let pageNumber = Number(getCurrentPage);
+    console.log(pageNumber);
+    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber - 1}.html`));
 }
 // function validateForm(event:any):void {
 //     event.preventDefault()

@@ -10,27 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="../index.js" defer></script>>
 </head>
-<body>
-    
+<body>  
     <section class="views">
-
         <figure>
             <img src="../assets/images/super-dev-5.svg" alt="">
         </figure>
 
         <article class="forms">
+            <form action="page6.html">
             <h2 class="title2">If you or someone close to you has already made a loss on the investment, write down the details</h2>
 
-            <textarea name="investment-history" id="investment-history" cols="30" rows="10" placeholder="Write your previous experiences with investments here"></textarea>
+            <textarea name="investment-history" id="investment-history" cols="30" rows="10" placeholder="    Write your previous experiences with investments here" required></textarea>
 
-            <a href="page3.html">
-                <button class="next-button" formnovalidate>Back</button></a>
+                <button class="next-button" formnovalidate onclick="backButton()">Back</button>
 
-            <a href="page6.html" onsubmit="validadeForm()">
-                <button type="submit" class="next-button">Next</button></a>
+                <button type="submit" class="next-button">Next</button>
 
-            <a href="page6.html">
-                <button class="next-button skip-button" formnovalidate>Skip</button></a>
+                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="skipButton()">Skip</button>
+
             </form>
         </article>
     </section>
