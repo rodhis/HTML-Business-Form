@@ -163,7 +163,7 @@ input[type='radio']:checked,[type='checkbox']:checked {
 .inputBox {
     border-radius: 1.25em;
     border: 0.5px solid var(--border-white);
-    width: 80%;
+    width: 100%;
     height: 2.5em;
     font-size: 1.5em;
     padding: 0 6% 0 10%;
@@ -175,14 +175,15 @@ input[type='radio']:checked,[type='checkbox']:checked {
 }
 
 .inputBoxLabel {
+    display: block;
     font-size: 2em;
     font-weight: 700;
     line-height: normal;
+    text-align: left;
     justify-content: left;
-    align-items: baseline;
 }
 
-.forms #age {
-    width: auto;
-    align-items: baseline;
+.ageInput {
+    width: 30%;
+    margin-left: -6vw;
 }
