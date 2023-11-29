@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../index.js" defer></script>
+</head>
+<body>
+    <section class="views">
+        <figure>
+            <img src="../assets/images/super-dev-4.svg" alt="">
+        </figure>
+            <article class="forms">
+                <form action="page5.html" id="form-page3">
+                    <h2 class="title2">How do you decide do invest?</h2>
+                    <div class="container">
+
+                    <select form="form-page2" name="status" id="accstat" class="selectForm" required>
+                    
+                        <option value="1">I have not invested yet.</option>
+                        <option value="2">I prefer investing small ammounts of money with quick return.</option>
+                        <option value="3">I like to invest in the stock market.</option>
+                        <option value="4">I have multiple investments in various areas.</option>
+                    </select>
+                    <div class="dd-arrow" > </div>
+                </div>
+
+            <h2 class="title2">What resources have you used or are you using for your training?</h2>
+
+                <section class="check">
+
+                    <div class="flex-aligning">
+                        <input type="checkbox" name="train-resources" id="books-articles">
+                        <label for="books-articles">Books and Articles</label>
+                    </div>
+                    <div class="flex-aligning">
+                        <input type="checkbox" name="train-resources" id="youtube">
+                        <label for="youtube">YouTube tutorial videos</label>
+                    </div>
+                    <div class="flex-aligning">
+                        <input type="checkbox" name="train-resources" id="courses">
+                        <label for="books-articles">Online or face-to-face courses</label>
+                    </div>
+                    <div class="flex-aligning">
+                        <input type="checkbox" name="train-resources" id="experience">
+                        <label for="experience">Experience with little investments</label>
+                    </div>
+                </section>
+            <a href="page2.html">
+                <button class="next-button">Back</button></a>
+
+            <a href="page5.html" onsubmit="validadeForm()">
+                <button type="submit" class="next-button">Next</button></a>
+
+            <a href="page5.html">
+                <button class="next-button skip-button" formnovalidate>Skip</button></a>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

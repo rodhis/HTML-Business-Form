@@ -17,11 +17,12 @@
         </figure>
 
         <article class="forms">
-            <h2 class="title2">What is the status of your account?</h2>
-            <div class="container">
+            <form action="page4.html" id="form-page2">
+                <h2 class="title2">What is the status of your account?</h2>
+                <div class="container">
             
-               <!-- <img src="../assets/images/arrow-bottom.svg" alt="" srcset=""> -->
-                <select name="status" id="accstat" required>
+
+                <select form="form-page2" name="status" id="accstat2" class="selectForm" required>
                    
                     <option value="1">I have not created an account yet.</option>
                     <option value="2">I have an old account but it's unused.</option>
@@ -33,36 +34,37 @@
             
             <h2 class="title2">In which financial markets do you operate?</h2>
 
-            <section class="marketSelect">
+            <section class="check">
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="stock_market">
+                    <input type="radio" name="market" id="stock_market" class="radio3">
                     <label for="stock_market">Stock Market</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="foreign_exchange">
+                    <input type="radio" name="market" id="foreign_exchange" class="radio3">
                     <label for="foreign_exchange">Foreign Exchange</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="commodity">
+                    <input type="radio" name="market" id="commodity" class="radio3">
                     <label for="commodity">Commodity</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="bond_market">
+                    <input type="radio" name="market" id="bond_market" class="radio3">
                     <label for="bond_market">Bond Market</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="cryptocurrency_market"> 
+                    <input type="radio" name="market" id="cryptocurrency_market" class="radio3"> 
                     <label for="cryptocurrency_market">Cryptocurrency Market</label>
                 </div>
             </section>
             <a href="page2.html">
                 <button class="next-button">Back</button></a>
 
-            <a href="page4.html">
-                <button class="next-button">Next</button></a>
+            <a href="page4.html" onsubmit="validadeForm()">
+                <button type="submit" class="next-button">Next</button></a>
 
             <a href="page4.html">
-                <button class="next-button skip-button">Skip</button></a>
+                <button class="next-button skip-button" formnovalidate>Skip</button></a>
+            </form>
         </article>
        
     </section>
