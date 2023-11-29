@@ -17,12 +17,12 @@
         </figure>
 
         <article class="forms">
-            <form action="page4.html" id="form-page2">
+            <form action="page4.html" id="form-page3">
                 <h2 class="title2">What is the status of your account?</h2>
                 <div class="container">
             
 
-                <select form="form-page2" name="status" id="accstat2" class="selectForm" required>
+                <select form="form-page2" name="status" id="selectPage3" class="selectForm" required>
                    
                     <option value="1">I have not created an account yet.</option>
                     <option value="2">I have an old account but it's unused.</option>
@@ -36,7 +36,7 @@
 
             <section class="check">
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="stock_market" class="radio3">
+                    <input type="radio" name="market" id="stock_market" class="radio3" required>
                     <label for="stock_market">Stock Market</label>
                 </div>
                 <div class="radio-wrap">
@@ -56,15 +56,14 @@
                     <label for="cryptocurrency_market">Cryptocurrency Market</label>
                 </div>
             </section>
-            <a href="page2.html">
-                <button class="next-button">Back</button></a>
+          
+                <button class="next-button" formnovalidate onclick="history.back()">Back</button>
 
-            <a href="page4.html" onsubmit="validadeForm()">
-                <button type="submit" class="next-button">Next</button></a>
+                <button type="submit" class="next-button">Next</button>
 
-            <a href="page4.html">
-                <button class="next-button skip-button" formnovalidate>Skip</button></a>
-            </form>
+        
+                <button class="next-button skip-button" id="skip-button" formnovalidate>Skip</button>
+            </form> 
         </article>
        
     </section>
