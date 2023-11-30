@@ -13,39 +13,33 @@ function changeButtonText(text: string) {
 
 }
 
+// function pageSwitch(event:any, page:string): void {
+//     event.preventDefault()
+//     addEventListener('click', () => window.location.replace(`/src/pages/page${page}.html`))
+// }
+
+
+// another logic to test later 
 function skipButton():void {
     const skipButton:HTMLButtonElement = document.getElementById('skip-button') as HTMLButtonElement
-    const page:string = document.URL.slice(-7,-6)
-    let currentPage:number = Number(page)
-
-
-    console.log(page)
-
-    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${currentPage+1}.html`) )
-}
-
-function backButton(): void {
-    const skipButton:HTMLButtonElement = document.getElementById('skip-button') as HTMLButtonElement
     const page:string = document.URL
-    const dotIndex:number = page.lastIndexOf('.')
-    let getCurrentPage:string = page.slice(dotIndex + 1)
-    let pageNumber:number = Number(getCurrentPage)
+    const dotIndex:number = page.lastIndexOf('/')
+    let getCurrentPage:string = page.slice(dotIndex + 5)
+    let pageNumber:number = parseInt(getCurrentPage[0])
 
-    console.log(pageNumber)
 
-    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber-1}.html`) )
+    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber+1}.html`) )
 }
 
+function backButton(event: MouseEvent): void {
+    event.preventDefault()
+    const backButton:HTMLButtonElement = document.querySelector('.back-button') as HTMLButtonElement
+    const page:string = document.URL
+    const dotIndex:number = page.lastIndexOf('/')
+    let getCurrentPage:string = page.slice(dotIndex + 5)
+    let pageNumber:number = parseInt(getCurrentPage[0])
 
-// function validateForm(event:any):void {
-//     event.preventDefault()
-//     console.log('Executou')
-//     const radioForm:HTMLFormElement = document.getElementById('form-page3') as HTMLFormElement
-            
-//     const select:HTMLSelectElement = document.getElementById('selectPage3') as HTMLSelectElement
-//     const selectedValue = select.value 
-    
-//     if (selectedValue) console.log(selectedValue) 
-//         else
-//             console.log('Não funcionou')
-//     }
+
+    backButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber-1}.html`) )
+}
+

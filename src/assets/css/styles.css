@@ -144,7 +144,7 @@ input[type='radio']:checked,[type='checkbox']:checked {
         pointer-events: none;
 }
 
-#accstat:focus~div{
+.selectForm:focus~div{
     border-top: 14px solid #3EB25E ;
     transform: rotate(-90deg);
     transition: 0.3s ease-in-out;
@@ -186,4 +186,24 @@ input[type='radio']:checked,[type='checkbox']:checked {
 .ageInput {
     width: 30%;
     margin-left: -6vw;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+    .views, .forms {
+        display: block;
+        width: 100vw;
+        padding: 0;
+        
+    }
+    img {
+        width: 16.9375rem;
+        height: 26rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
 }
