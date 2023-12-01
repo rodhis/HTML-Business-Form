@@ -198,12 +198,53 @@ input[type='radio']:checked,[type='checkbox']:checked {
         
     }
     img {
-        width: 16.9375rem;
-        height: 26rem;
+        width: 60%;
+        height: 20rem;
+    }
+
+    .title1, .title2, .subtitle, .p {
+        text-align: left;
+    }
+
+    .title1 {
+        font-size: 9vw;
+        margin-left: 4rem;
+    }
+
+    .title2 {
+        font-size: 3vw;
+        margin-left: 3rem;
+    }
+
+    .next-button {
+        font-size: 4vw;
+        margin: 1.5em 0 1em 0;
+    }
+
+    .skip-button {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 25%;
     }
 
 }
 
 @media (max-width: 320px) {
+    img {
+        width: 60%;
+        height: auto;
+        overflow: visible; 
+       }
     
+    .next-button {
+        font-size: 5vw;
+        margin: 1.5em 0 1em 0;
+        height: 5vh;
+    }
+
+    .skip-button {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 35%;
+    }
 }
