@@ -8,7 +8,7 @@ function changeButtonText(text: string) {
 
 function skipButton(page:number):void {
     window.location.replace(`/src/pages/page${page}.html`)
-    // const backButton:HTMLButtonElement = document.querySelector('.skip-button') as HTMLButtonElement
+   
 }
 
 function backButton(page:number): void {

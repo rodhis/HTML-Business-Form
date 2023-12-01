@@ -6,7 +6,6 @@ function changeButtonText(text) {
 // skip and back buttons logic
 function skipButton(page) {
     window.location.replace(`/src/pages/page${page}.html`);
-    // const backButton:HTMLButtonElement = document.querySelector('.skip-button') as HTMLButtonElement
 }
 function backButton(page) {
     window.location.replace(`/src/pages/page${page}.html`);
