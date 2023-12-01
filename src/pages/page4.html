@@ -17,7 +17,7 @@
             <img src="../assets/images/super-dev-4.svg" alt="">
         </figure>
             <article class="forms">
-                <form action="page5.html" id="form-page3">
+                <form  id="form-page3">
                     <h2 class="title2">How do you decide do invest?</h2>
                     <div class="container">
 
@@ -36,29 +36,29 @@
                 <section class="check">
 
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="books-articles" required>
+                        <input type="checkbox" name="train-resources" id="books-articles" class="page4Checkbox" value="books-articles">
                         <label for="books-articles">Books and Articles</label>
                     </div>
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="youtube">
+                        <input type="checkbox" name="train-resources" id="youtube" class="page4Checkbox" value="youtube">
                         <label for="youtube">YouTube tutorial videos</label>
                     </div>
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="courses">
-                        <label for="books-articles">Online or face-to-face courses</label>
+                        <input type="checkbox" name="train-resources" id="courses" class="page4Checkbox" value="courses">
+                        <label for="courses">Online or face-to-face courses</label>
                     </div>
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="experience">
+                        <input type="checkbox" name="train-resources" id="experience" class="page4Checkbox" value="experience">
                         <label for="experience">Experience with little investments</label>
                     </div>
                 </section>
                 
                 <button type="button" class="next-button back-button" formnovalidate onclick="backButton(3)">Back</button>
 
-                <button type="submit" class="next-button">Next</button>
+                <button type="submit" class="next-button" onclick="validateCheckbox()">Next</button>
 
         
-                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="skipButton(5)">Skip</button>
+                <button class="next-button skip-button" id="skip-button" formnovalidate >Skip</button>
                 </form>
         </article>
     </section>
