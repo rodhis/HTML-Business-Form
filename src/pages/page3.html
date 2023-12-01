@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="../index.js" defer></script>
+    <script src="../scripts/page3.js" defer></script>
 </head>
 <body>
     <section class="views">
@@ -24,10 +25,10 @@
 
                 <select form="form-page2" name="status" id="selectPage3" class="selectForm" required>
                    
-                    <option value="1">I have not created an account yet.</option>
-                    <option value="2">I have an old account but it's unused.</option>
-                    <option value="3">I am a novice user on this platform.</option>
-                    <option value="4">I am a veteran user here.</option>
+                    <option value="new">I have not created an account yet.</option>
+                    <option value="unused">I have an old account but it's unused.</option>
+                    <option value="novice">I am a novice user on this platform.</option>
+                    <option value="veteran">I am a veteran user here.</option>
                 </select>
                 <div class="dd-arrow" > </div>
             </div>
@@ -36,23 +37,23 @@
 
             <section class="check">
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="stock_market" class="radio3" required>
+                    <input type="radio" name="market" id="stock_market" class="radio3" value="stock_market" required>
                     <label for="stock_market">Stock Market</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="foreign_exchange" class="radio3">
+                    <input type="radio" name="market" id="foreign_exchange" class="radio3" value="foreign_exchange">
                     <label for="foreign_exchange">Foreign Exchange</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="commodity" class="radio3">
+                    <input type="radio" name="market" id="commodity" class="radio3" value="commodity">
                     <label for="commodity">Commodity</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="bond_market" class="radio3">
+                    <input type="radio" name="market" id="bond_market" class="radio3" value="bond_market">
                     <label for="bond_market">Bond Market</label>
                 </div>
                 <div class="radio-wrap">
-                    <input type="radio" name="market" id="cryptocurrency_market" class="radio3"> 
+                    <input type="radio" name="market" id="cryptocurrency_market" class="radio3" value="cryptocurrency_market"> 
                     <label for="cryptocurrency_market">Cryptocurrency Market</label>
                 </div>
             </section>

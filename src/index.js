@@ -24,15 +24,14 @@ function charsCounter() {
     const maxLength = 130;
     const textArea = document.getElementById('investment-history');
     const counter = document.querySelector('.charCounter');
-    let countMessage = document.querySelector('.counterText')
     if (textArea && counter) {
         const remaining = maxLength - textArea.value.length;
         counter.textContent = remaining.toString();
-        if (remaining <= 0) {
-            countMessage.classList.add('counterExceeded');
+        if (remaining < 0) {
+            counter.classList.add('counterExceeded');
         }
         else {
-            countMessage.classList.remove('counterExceeded');
+            counter.classList.remove('counterExceeded');
         }
     }
 }
