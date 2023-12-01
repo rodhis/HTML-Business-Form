@@ -3,22 +3,13 @@ function changeButtonText(text) {
     const buttonText = document.querySelector('.next-button');
     buttonText.innerHTML = text;
 }
-function skipButton() {
-    const skipButton = document.getElementById('skip-button');
-    const page = document.URL;
-    const dotIndex = page.lastIndexOf('/');
-    let getCurrentPage = page.slice(dotIndex + 5);
-    let pageNumber = parseInt(getCurrentPage[0]);
-    skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber + 1}.html`));
+function skipButton(page) {
+    window.location.replace(`/src/pages/page${page}.html`);
+    const backButton = document.querySelector('.skip-button');
 }
-function backButton(event) {
-    event.preventDefault();
+function backButton(page) {
+    window.location.replace(`/src/pages/page${page}.html`);
     const backButton = document.querySelector('.back-button');
-    const page = document.URL;
-    const dotIndex = page.lastIndexOf('/');
-    let getCurrentPage = page.slice(dotIndex + 5);
-    let pageNumber = parseInt(getCurrentPage[0]);
-    backButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber - 1}.html`));
 }
 function charsCounter() {
     const maxLength = 130;
