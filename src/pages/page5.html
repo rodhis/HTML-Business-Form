@@ -20,13 +20,13 @@
             <form action="page6.html">
             <h2 class="title2">If you or someone close to you has already made a loss on the investment, write down the details</h2>
 
-            <textarea name="investment-history" id="investment-history" cols="30" rows="10" placeholder="    Write your previous experiences with investments here" required></textarea>
+            <textarea name="investment-history" id="investment-history" cols="30" rows="10" placeholder="    Write your previous experiences with investments here" maxlength="130" required></textarea>
 
-                <button class="next-button" formnovalidate onclick="pageSwitch(4)">Back</button>
+                <button class="next-button" formnovalidate onclick="backButton(4)">Back</button>
 
                 <button type="submit" class="next-button">Next</button>
 
-                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="pageSwitch(6)">Skip</button>
+                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="skipButton(6)">Skip</button>
 
             </form>
         </article>

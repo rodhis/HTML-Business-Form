@@ -1,11 +1,3 @@
-// window.onload = () => {
-    
-//     const radioForm:HTMLFormElement = document.getElementById('form-page3') as HTMLFormElement
-
-//     radioForm.addEventListener('submit', validateForm)
-//     // console.log(radioForm)
-//     }
-
 
 function changeButtonText(text: string) {
     const buttonText:HTMLElement = document.querySelector('.next-button') as HTMLElement
@@ -13,13 +5,6 @@ function changeButtonText(text: string) {
 
 }
 
-// function pageSwitch(event:any, page:string): void {
-//     event.preventDefault()
-//     addEventListener('click', () => window.location.replace(`/src/pages/page${page}.html`))
-// }
-
-
-// another logic to test later 
 function skipButton():void {
     const skipButton:HTMLButtonElement = document.getElementById('skip-button') as HTMLButtonElement
     const page:string = document.URL

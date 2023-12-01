@@ -21,7 +21,7 @@ function skipButton() {
     let pageNumber = parseInt(getCurrentPage[0]);
     skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber + 1}.html`));
 }
-function backButton(event) {
+function backButton() {
     event.preventDefault();
     const backButton = document.querySelector('.back-button');
     const page = document.URL;
