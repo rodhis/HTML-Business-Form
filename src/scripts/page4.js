@@ -1,6 +1,6 @@
 "use strict";
 const investmentType = document.querySelector('#investment-type');
-const trainingResources = document.querySelectorAll('input[type="radio"]');
+const trainingResources = document.querySelectorAll('input[type="checkbox"]');
 investmentType.addEventListener('change', () => {
     const statusValue = investmentType.value;
     localStorage.setItem(statusValue, 'investmentType');

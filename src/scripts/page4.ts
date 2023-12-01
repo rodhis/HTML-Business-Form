@@ -1,5 +1,5 @@
 const investmentType:HTMLSelectElement | null = document.querySelector('#investment-type') as HTMLSelectElement
-const trainingResources = document.querySelectorAll<HTMLInputElement>('input[type="radio"]')
+const trainingResources = document.querySelectorAll<HTMLInputElement>('input[type="checkbox"]')
 
    investmentType.addEventListener('change', () => {
 
