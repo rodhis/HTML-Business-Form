@@ -1,5 +1,4 @@
 "use strict";
-// change text on index.html next button on hover
 function changeButtonText(text) {
     const buttonText = document.querySelector('.next-button');
     buttonText.innerHTML = text;
@@ -13,14 +12,18 @@ function backButton(page) {
     window.location.replace(`/src/pages/page${page}.html`);
     const backButton = document.querySelector('.back-button');
 }
-// page 4 checkbox validation
-function validateCheckbox(event) {
-    event.preventDefault();
-    const trainResources = document.querySelectorAll('input[type="checkbox"]');
-    var resourcesArray = [];
-    trainResources.forEach((checkbox) => {
-        resourcesArray.push(checkbox.value);
+function checkboxValidaton() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let isChecked = false;
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            isChecked = true;
+        }
     });
+    if (!isChecked) {
+        alert('Please select at least one resource!');
+    }
+    return true;
 }
 // textarea counter
 function charsCounter() {

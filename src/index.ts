@@ -1,7 +1,3 @@
-
-
-// change text on index.html next button on hover
-
 function changeButtonText(text: string) {
     const buttonText:HTMLElement = document.querySelector('.next-button') as HTMLElement
     buttonText.innerHTML = text
@@ -20,17 +16,21 @@ function backButton(page:number): void {
     const backButton:HTMLButtonElement = document.querySelector('.back-button') as HTMLButtonElement
 }
 
-// page 4 checkbox validation
+function checkboxValidaton() {
+  const checkboxes = document.querySelectorAll<HTMLInputElement>('input[type="checkbox"]')
+  let isChecked = false
 
-function validateCheckbox(event:any) {
-  event.preventDefault()
-  const trainResources:NodeListOf<HTMLInputElement> = document.querySelectorAll('input[type="checkbox"]')
-  var resourcesArray:string[] = []  
+  checkboxes.forEach(checkbox => {
+    if(checkbox.checked) {
+      isChecked = true
+    }
+  })
 
-  trainResources.forEach((checkbox) => {
-    resourcesArray.push(checkbox.value)
-  });
+  if (!isChecked) {
+    alert('Please select at least one resource!')
+  }
 
+  return true
 }
 
 

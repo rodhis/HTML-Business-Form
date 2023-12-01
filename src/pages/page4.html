@@ -36,7 +36,7 @@
                 <section class="check">
 
                     <div class="flex-aligning">
-                        <input type="checkbox" name="train-resources" id="books-articles" class="page4Checkbox" value="books-articles">
+                        <input type="checkbox" name="train-resources" id="books-articles" class="page4Checkbox" value="books-articles" required>
                         <label for="books-articles">Books and Articles</label>
                     </div>
                     <div class="flex-aligning">
@@ -55,10 +55,10 @@
                 
                 <button type="button" class="next-button back-button" formnovalidate onclick="backButton(3)">Back</button>
 
-                <button type="submit" class="next-button" onclick="validateCheckbox()">Next</button>
+                <button type="submit" class="next-button">Next</button>
 
         
-                <button class="next-button skip-button" id="skip-button" formnovalidate >Skip</button>
+                <button class="next-button skip-button" id="skip-button" formnovalidate onclick="skipButton(5)">Skip</button>
                 </form>
         </article>
     </section>
