@@ -1,18 +1,8 @@
 "use strict";
-// window.onload = () => {
-//     const radioForm:HTMLFormElement = document.getElementById('form-page3') as HTMLFormElement
-//     radioForm.addEventListener('submit', validateForm)
-//     // console.log(radioForm)
-//     }
 function changeButtonText(text) {
     const buttonText = document.querySelector('.next-button');
     buttonText.innerHTML = text;
 }
-// function pageSwitch(event:any, page:string): void {
-//     event.preventDefault()
-//     addEventListener('click', () => window.location.replace(`/src/pages/page${page}.html`))
-// }
-// another logic to test later 
 function skipButton() {
     const skipButton = document.getElementById('skip-button');
     const page = document.URL;
@@ -21,7 +11,7 @@ function skipButton() {
     let pageNumber = parseInt(getCurrentPage[0]);
     skipButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber + 1}.html`));
 }
-function backButton() {
+function backButton(event) {
     event.preventDefault();
     const backButton = document.querySelector('.back-button');
     const page = document.URL;
@@ -29,4 +19,24 @@ function backButton() {
     let getCurrentPage = page.slice(dotIndex + 5);
     let pageNumber = parseInt(getCurrentPage[0]);
     backButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber - 1}.html`));
+}
+function charsCounter() {
+    const maxLength = 130;
+    const textArea = document.getElementById('investment-history');
+    const counter = document.querySelector('.charCounter');
+    let countMessage = document.querySelector('.counterText')
+    if (textArea && counter) {
+        const remaining = maxLength - textArea.value.length;
+        counter.textContent = remaining.toString();
+        if (remaining <= 0) {
+            countMessage.classList.add('counterExceeded');
+        }
+        else {
+            countMessage.classList.remove('counterExceeded');
+        }
+    }
+}
+const textarea = document.getElementById('investment-history');
+if (textarea) {
+    textarea.addEventListener('keyup', charsCounter);
 }

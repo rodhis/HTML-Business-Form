@@ -28,3 +28,25 @@ function backButton(event: MouseEvent): void {
     backButton.addEventListener('click', () => window.location.replace(`/src/pages/page${pageNumber-1}.html`) )
 }
 
+function charsCounter(): void  {
+    const maxLength:number = 130;
+    const textArea:HTMLTextAreaElement | null = document.getElementById('investment-history') as HTMLTextAreaElement;
+    const counter:HTMLElement | null = document.querySelector('.charCounter');
+
+  if (textArea && counter) {
+    const remaining: number = maxLength - textArea.value.length;
+    counter.textContent = remaining.toString();
+
+    if (remaining < 0) {
+      counter.classList.add('counterExceeded');
+    } else {
+      counter.classList.remove('counterExceeded');
+    }
+  }
+}
+
+const textarea: HTMLTextAreaElement | null = document.getElementById('investment-history') as HTMLTextAreaElement;
+if (textarea) {
+  textarea.addEventListener('keyup', charsCounter);
+
+}

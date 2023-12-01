@@ -53,6 +53,15 @@ p {
     margin-left: 7em;
 }
 
+.counterText {
+    font-size: 3vw;
+    margin-left: 5%;
+}
+
+.counterExceeded {
+    color: #ff0000;
+}
+
   /* buttons */
 
 .next-button {
