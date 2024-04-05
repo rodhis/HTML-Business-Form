@@ -4,4 +4,6 @@
 
 ## Turma: React/AWS 06/11/2023
 
-### Tecnologias utilizadas: SCRUM, Kanban, HTML5, CSS3, TypeScript
+## Descrição: Referente ao primeiro desafio de projeto do estágio em React pela Compass UOL. Um formulário simples sobre negócios e investimentos.
+
+### Tecnologias utilizadas: HTML5, CSS3, TypeScript
